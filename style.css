@@ -1,0 +1,74 @@
+#header {
+    background-color: rgb(208 208 208);
+    height: 7em;
+    width: 100%;
+}
+
+.navlogo {
+    float: left;
+    display: flex;
+}
+
+.navlogo img {
+    width: 25%;
+    margin-top: 7px;
+    margin-left: 178px;
+    border-radius: 100px;
+}
+
+.logo {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .navlogo {
+        float: left;
+        width: 50%;
+    }
+}
+
+.navitem {
+    float: right;
+    padding: 0px;
+    padding-right: 56px;
+}
+
+.navitem li {
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 30px;
+}
+
+.navitem li a {
+    margin: 3px 3px;
+    padding: 10px;
+    color: #000;
+    font: sans-serif;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+    .navitem {
+        float: right;
+        margin: -43px;
+    }
+    .navitem a {}
+}
+
+li:hover {
+    border-radius: 3px;
+    background-color: white;
+    color: rgb(49, 172, 12);
+    padding: 0px;
+}
+
+.nk {
+    margin-top: 10px;
+    background-color: yellowgreen;
+}
+
+button:hover {
+    background-color: violet;
+}
