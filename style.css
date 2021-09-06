@@ -1,3 +1,7 @@
+body {
+    margin: 3px;
+}
+
 #header {
     background-color: rgb(208 208 208);
     height: 7em;
@@ -11,7 +15,6 @@
 
 .navlogo img {
     width: 25%;
-    margin-top: 7px;
     margin-left: 178px;
     border-radius: 100px;
 }
@@ -23,9 +26,17 @@
 }
 
 @media screen and (max-width: 600px) {
-    .navlogo {
-        float: left;
-        width: 50%;
+    .navitem {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+    .navitem a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
     }
 }
 
