@@ -6,7 +6,7 @@
 
 .navlogo {
     float: left;
-    display: flex;
+    width: 14%;
 }
 
 .navlogo img {
@@ -18,6 +18,8 @@
 
 .logo {
     text-align: center;
+    margin-left: 171px;
+    margin-top: 3px;
 }
 
 @media screen and (max-width: 600px) {
@@ -49,19 +51,16 @@
     text-decoration: none;
 }
 
-@media screen and (max-width: 500px) {
-    .navitem {
-        float: right;
-        margin: -43px;
-    }
-    .navitem a {}
+#slider .box {}
+
+#slider .box img {
+    width: 100%;
+    margin-top: 2px;
+    height: 40em;
 }
 
-li:hover {
-    border-radius: 3px;
-    background-color: white;
-    color: rgb(49, 172, 12);
-    padding: 0px;
+#mainbar {
+    border: solid 3px;
 }
 
 .nk {
