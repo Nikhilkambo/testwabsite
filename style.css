@@ -1,5 +1,6 @@
 body {
     margin: 3px;
+    width: 100%;
 }
 
 #header {
@@ -25,47 +26,63 @@ body {
     margin-top: 3px;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (min-width:600px) {
     .navitem {
-        overflow: hidden;
-        background-color: #333;
-        position: relative;
+        float: right;
+        padding: 0px;
+        padding-right: 56px;
     }
-    .navitem a {
-        color: white;
-        padding: 14px 16px;
+    .navitem li {
+        list-style: none;
+        display: inline-block;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        padding-top: 30px;
+    }
+    .navitem li a {
+        margin: 3px 3px;
+        padding: 10px;
+        color: #000;
+        font: sans-serif;
         text-decoration: none;
-        font-size: 17px;
-        display: block;
+    }
+    .navitem li a:hover {
+        background-color: cornsilk;
+        color: crimson;
+        border-radius: 13px;
     }
 }
 
-.navitem {
-    float: right;
-    padding: 0px;
-    padding-right: 56px;
-}
-
-.navitem li {
-    list-style: none;
-    display: inline-block;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    padding-top: 30px;
-}
-
-.navitem li a {
-    margin: 3px 3px;
-    padding: 10px;
-    color: #000;
-    font: sans-serif;
-    text-decoration: none;
-}
-
-.navitem li a:hover {
-    background-color: cornsilk;
-    color: crimson;
-    border-radius: 13px;
+@media only screen and (max-width:600px) {
+    .navlogo {
+        float: left;
+    }
+    .navlogo img {
+        width: 30%;
+    }
+    .navitem {
+        float: right;
+        padding: 2px;
+    }
+    .navitem ul {
+        margin: 0px;
+        padding: 9px;
+    }
+    .navitem li {
+        font-size: 15px;
+        list-style: none;
+    }
+    .navitem li a {
+        margin: 5px 3px;
+        padding: 10px;
+        color: #000;
+        font: sans-serif;
+        text-decoration: none;
+    }
+    .navitem li:hover {
+        background-color: cadetblue;
+        border-radius: 20px;
+    }
 }
 
 #slider {}
